@@ -14,7 +14,31 @@
 # map
 
 <script>
-  
+
+// map 사용안하고 명령형 함수
+  // let names = [];
+  // for (const p of products) {
+  //   names.push(p.name);
+  // }
+  // log(names);
+
+  // let prices = [];
+  // for (const p of products) {
+  //   prices.push(p.price);
+  // }
+  // log(prices);
+
+  // map 함수 + 보조 함수로 결과값 나타내기
+  const map = (f, iter) => {
+    let res = [];
+    for (const a of iter) {
+      res.push(f(a));
+    }
+    return res;
+  };
+
+  log(map(p => p.name, products));
+  log(map(p => p.price, products));
 
 </script>
 
