@@ -93,5 +93,10 @@ var it2 = it[Symbol.iterator]();
 ## 전개 연산자
 
 <script>
-
+console.clear();
+const a = [1, 2];
+// a[Symbol.iterator] = null;
+log(a);
+log([...a]);
+log([...a, ...arr, ...set, ...map.keys()]);
 </script>
